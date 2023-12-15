@@ -4,7 +4,6 @@ import { useState } from "react";
 import Modal from "./Modal";
 import ExperienceForm from "./ExperienceForm";
 import AboutForm from "./AboutForm";
-// import ExperienceForm from "./ExperienceForm"; // Assuming you have this component from the previous example
 
 function AboutSession() {
   const [showModal, setShowModal] = useState(false);
@@ -39,6 +38,7 @@ function AboutSession() {
 
   const handleCancel = () => {
     setShowModal(false);
+    setShowAboutModal(false);
   };
 
   return (

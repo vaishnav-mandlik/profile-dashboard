@@ -1,5 +1,5 @@
 import profilePicture from "../assets/profile-main.jpg";
-import { CiMail, CiMusicNote1, CiSearch } from "react-icons/ci";
+import { CiMail, CiSearch } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import Profilebg from "../assets/profilebg.png";
 import { FaPencilAlt } from "react-icons/fa";
@@ -7,13 +7,17 @@ import SideNav from "../components/SideNav";
 import ProfileDetails from "../components/ProfileDetails";
 import Feed from "../components/Feed";
 import GroupList from "../components/GroupList";
+import sphere from "../assets/sphere.png";
 
 function Home() {
   return (
     <div className="flex w-full flex-col md:flex-row overflow-hidden bg-gray-100">
       <aside className="w-full md:w-64 bg-white  border-r border-gray-200 hidden md:block">
         <div className="md:w-54 bg-white p-6">
-          <div className="text-[#7976FF] font-bold text-lg mb-6">sphere</div>
+          <div className="flex items-center mb-6 ml-4">
+            <img src={sphere} alt="s" className="w-8 h-10 rounded-full" />
+            <div className="text-black font-normal text-lg ">sphere</div>
+          </div>
           <SideNav />
           <div className="border border-gray-200 rounded-md"></div>
           <GroupList />
@@ -55,7 +59,7 @@ function Home() {
           <div className="absolute right-10 top-4 p-1 transform border-2 rounded-full bg-white border-black">
             <FaPencilAlt className="text-md text-[#7976FF]" />
           </div>
-          <div className="absolute left-[20%] md:left-[11%] transform -translate-x-1/2 -bottom-16">
+          <div className="absolute left-[20%] md:left-[13%] transform -translate-x-1/2 -bottom-16">
             <img
               src={profilePicture}
               alt="Profile"

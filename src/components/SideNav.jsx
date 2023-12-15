@@ -28,7 +28,7 @@ function SideNav() {
                 {item.icon === "RxAvatar" && <RxAvatar />}
                 {item.icon === "IoSettings" && <IoSettings />}
               </div>
-              {item.name}
+              <p className="text-gray-800 ml-1">{item.name}</p>
             </a>
           </li>
         ))}

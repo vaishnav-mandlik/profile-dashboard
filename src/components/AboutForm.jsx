@@ -18,10 +18,11 @@ function AboutForm({ about, onSave, onCancel }) {
           <button
             aria-label="Go back"
             className="absolute left-10 p-0 text-black bg-white hover:border-none focus:outline-none"
+            onClick={onCancel}
           >
             <FaChevronLeft />
           </button>
-          <h1 className="text-lg font-bold text-black">add Experience</h1>
+          <h1 className="text-lg font-semibold text-black">Edit About</h1>
         </div>
 
         <div className="flex items-center justify-between p-2 mt-1 bg-[#EDEBFF]">
@@ -74,6 +75,7 @@ function AboutForm({ about, onSave, onCancel }) {
         <button
           type="submit"
           className="w-full bg-[#7976FF] text-white rounded-lg px-4 py-2"
+          onClick={onCancel}
         >
           Save
         </button>
